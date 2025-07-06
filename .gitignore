@@ -1,0 +1,51 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+coverage
+_coverage
+reports
+_reports
+*junit.xml
+
+# api testing
+Facade.Web.Function
+*.bru
+
+# production
+/apps/*/build
+dist
+
+
+# misc
+.DS_Store
+.cache
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.eslintcache
+.turbo
+*.log
+*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.vscode/*
+!/.vscode/settings.json
+!/.vscode/extensions.json
+
+vite-env.d.ts
+/.vs
+*.tgz
+
+apps/*/results.xml
+apps/*/_reports
+*storybook.log

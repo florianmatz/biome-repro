@@ -1,0 +1,22 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["vite/client", "vitest/globals"],
+    "paths": {
+      "@/api": ["src/api"],
+      "@/api/*": ["src/api/*"],
+      "@/components/*": ["src/components/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/mocks/*": ["src/mocks/*"],
+      "@/models": ["src/models"],
+      "@/models/*": ["src/models/*"],
+      "@/scaffold/*": ["src/scaffold/*"],
+      "@/routing/*": ["src/routing/*"],
+      "@/service/*": ["src/service/*"],
+      "@/testutils/*": ["src/testutils/*"],
+      "@/utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["workbox-config.cjs", "sw-listener.js", "src"]
+}
